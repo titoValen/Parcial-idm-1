@@ -22,6 +22,8 @@ body {
     background: var(--white-color);
     color: var(--black-color);
     min-height: 100dvh;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 h1,
