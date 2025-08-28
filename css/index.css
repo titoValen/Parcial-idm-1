@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     justify-content: space-between;
     margin: 0 1rem;
@@ -6,32 +6,44 @@ header {
     top: 0;
     width: calc(100% - 2rem);
     z-index: 99999999999999999999999;
+}
 
-    & a {
-        width: 115px;
-        transition: .3s;
+.header__logo-link {
+    width: 115px;
+    transition: .3s;
+}
 
-        &:hover {
-            scale: 1.05;
-            filter: drop-shadow(0 0 .5rem var(--dorado-suave-color));
-        }
-    }
+.header__logo-link:hover {
+    scale: 1.05;
+    filter: drop-shadow(0 0 .5rem var(--dorado-suave-color));
+}
 
-    & nav {
-        display: grid;
+.header__nav {
+    display: grid;
+}
 
-        & ul {
-            display: flex;
-            align-items: center;
-            gap: 1.875rem;
+.header__nav-list {
+    display: flex;
+    align-items: center;
+}
 
-            & li a {
-                border: 1px solid black;
-                padding: .5rem 1rem;
-                border-radius: 1rem;
-            }
-        }
-    }
+.header__nav-item {
+    margin: 0 1rem;
+}
+
+.header__nav-link {
+    border: var(--plateado-oscuro-color) solid 2px;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background: var(--plateado-claro-color);
+    transition: .3s;
+}
+
+.header__nav-link:hover {
+    border: var(--dorado-suave-color) solid 2px;
+    background: var(--dorado-suave-color);
+    color: white;
+    box-shadow: 0 0 .5rem var(--dorado-suave-color);
 }
 
 .presentacion {
