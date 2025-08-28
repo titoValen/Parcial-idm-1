@@ -2,9 +2,12 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 1rem;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 2rem);
 
     & a {
-        width: 300px;
+        width: 115px;
     }
 
     & nav {
@@ -16,4 +19,11 @@ header {
             gap: 1.875rem;
         }
     }
+}
+
+.presentacion {
+    background-image: url('../img/banner_1.webp');
+    background-size: cover;
+    height: 100dvh;
+    width: 100%;
 }
