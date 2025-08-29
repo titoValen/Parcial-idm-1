@@ -1,5 +1,5 @@
 :root {
-    --blanco-color: #ffddff;
+    --blanco-color: #fff8ff;
     --negro-color: #0f0f0f;
     --azul-oscuro-color: #243E6D;
     --dorado-intenso-color: #C7A248;
@@ -8,7 +8,6 @@
     --plateado-oscuro-color: #A8AFC8;
     --rojo-vino-color: #8C2F39;
     --verde-esmeralda-color: #3B6E58;
-    
 
     --texto-titulo: "Cinzel", serif;
     --texto-parrafo: "Open Sans", sans-serif;
@@ -20,9 +19,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: var(--white-color);
-    color: var(--black-color);
+    background: var(--blanco-color);
+    color: var(--negro-color);
     min-height: 100dvh;
     max-width: 1600px;
     margin: 0 auto;
