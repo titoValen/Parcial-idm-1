@@ -26,9 +26,6 @@ html {
 body {
     background: var(--blanco-color);
     color: var(--negro-color);
-    min-height: 100dvh;
-    max-width: 1600px;
-    margin: 0 auto;
 }
 
 h1,
