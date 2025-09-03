@@ -3,6 +3,8 @@
     max-width: 1600px;
 }
 
+/* HEADER */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -50,10 +52,62 @@
     box-shadow: 0 0 .5rem var(--dorado-suave-color);
 }
 
+/* BANNER */
+
 .presentacion {
     background-image: url('../img/banner_1.webp');
     background-size: cover;
     height: 100dvh;
     width: 100%;
     mask-image: linear-gradient(transparent, black 15%, black 85%, transparent);
+}
+
+/* MAIN */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.main-content__section h2 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.2rem;
+}
+
+.main-content__section--introduction {
+    margin: 2rem 0 0 0;
+}
+
+.main-content__section--contact {
+    margin: 0 0 2rem 0;
+}
+
+.main-content__text,
+.main-content__list {
+    font-size: 1.25rem;
+}
+
+/* INTRODUCCIÓN */
+
+.main-content__section--introduction .main-content__text {
+    margin: 1rem 0;
+}
+
+.main-content__section--introduction .main-content__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.main-content__section--introduction .main-content__list .main-content__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content__section--introduction .main-content__list .main-content__list-item figure {
+    width: 4rem;
 }
