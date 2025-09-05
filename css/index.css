@@ -70,6 +70,10 @@
     gap: 3.5rem;
 }
 
+.main-content__section {
+    padding: 0 2rem;
+}
+
 .main-content__section h2 {
     text-align: center;
     margin: 2rem 0;
