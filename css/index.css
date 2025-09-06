@@ -127,15 +127,22 @@
     font-size: 1.5rem;
 }
 
-/* VIDEO CONTAINER */
 .main-content__video-container {
     display: grid;
     place-items: center;
 }
 
-/* ARTICLES CONTAINER */
 .main-content__articles-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+/* CHARACTERS */
+
+.main-content__characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
