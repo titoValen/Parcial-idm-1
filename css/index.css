@@ -115,3 +115,27 @@
 .main-content__section--introduction .main-content__list .main-content__list-item figure {
     width: 4rem;
 }
+
+/* FEACTURES */
+
+.main-content__article {
+    margin: 1.5rem 0;
+    width: 45%;
+}
+
+.main-content__article h3 {
+    font-size: 1.5rem;
+}
+
+/* VIDEO CONTAINER */
+.main-content__video-container {
+    display: grid;
+    place-items: center;
+}
+
+/* ARTICLES CONTAINER */
+.main-content__articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
