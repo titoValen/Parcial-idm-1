@@ -140,6 +140,22 @@
 
 /* CHARACTERS */
 
+.main-content__article {
+    max-width: 400px;
+    min-width: 250px;
+    display: grid;
+    grid-template-rows: auto auto auto; /* For title, meta, and content */
+    gap: 0.5rem;
+    align-items: start; /* Align items to start of their grid areas */
+    height: fit-content; /* Adjust height based on content */
+    padding: 1rem;
+}
+
+.main-content__meta {
+    color: gray;
+    margin: 0;
+}
+
 .main-content__characters-container {
     display: flex;
     flex-wrap: wrap;
