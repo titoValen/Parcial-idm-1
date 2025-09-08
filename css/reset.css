@@ -73,7 +73,12 @@ input,
 textarea {
     border: none;
     outline: none;
-    font: inherit;
+}
+
+input,
+textarea,
+label {
+    font-family: var(--texto-parrafo);
 }
 
 textarea {
