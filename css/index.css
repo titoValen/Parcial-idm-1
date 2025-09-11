@@ -164,6 +164,7 @@
 }
 
 /* CONTACT */
+
 .main-content__form {
     display: grid;
     gap: 1rem;
@@ -201,4 +202,32 @@
     border-radius: 0.5rem;
     background: var(--plateado-claro-color);
     font-family: var(--texto-parrafo);
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.25rem;
+}
+
+.footer__figure {
+    width: 250px;
+    height: 300px;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__email:hover {
+    text-decoration: underline;
 }
