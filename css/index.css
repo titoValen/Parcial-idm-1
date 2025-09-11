@@ -77,7 +77,7 @@
 .main-content__section h2 {
     text-align: center;
     margin: 2rem 0;
-    font-size: 2.2rem;
+    font-size: clamp(1.7625rem, 1.4367rem + 1.4894vw, 2.2rem);
 }
 
 .main-content__section--introduction {
@@ -90,7 +90,7 @@
 
 .main-content__text,
 .main-content__list {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.7965rem + 0.9302vw, 1.25rem);
 }
 
 /* INTRODUCCIÓN */
@@ -124,7 +124,7 @@
 }
 
 .main-content__article h3 {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 1.0638rem + 0.8511vw, 1.5rem);
 }
 
 .main-content__video-container {
@@ -188,7 +188,7 @@
 .form__input,
 .form__textarea {
     padding: .5rem;
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 0.7819rem + 0.4255vw, 1rem);
     border: var(--plateado-oscuro-color) solid 2px;
     border-radius: 0.5rem;
     transition: .3s;
@@ -197,7 +197,7 @@
 .form__button {
     margin-top: .5rem;
     padding: .5rem 1rem;
-    font-size: 1.15rem;
+    font-size: clamp(1.0125rem, 0.9101rem + 0.4681vw, 1.15rem);
     border: var(--plateado-oscuro-color) solid 2px;
     border-radius: 0.5rem;
     background: var(--plateado-claro-color);
