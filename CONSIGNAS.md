@@ -1,27 +1,27 @@
 # Checks para aprobar y a tener en cuenta
 - [ ] Desarrollar en dispositivos de celulares, tablets y pcs.
 - Hacer 5 secciones:
-	- [ ] Introducción.
-	- [ ] Características principales.
-	- [ ] Personajes.
-	- [ ] Galería.
-	- [ ] Formulario de contacto.
+	- [x] Introducción.
+	- [x] Características principales.
+	- [x] Personajes.
+	- [x] Galería.
+	- [x] Formulario de contacto.
 - Usar como mínimo dos breakpoints
-	- [ ] Uso mínimo de la resolución 320px.
-	- [ ] Uso máximo de la resolución 1680px.
+	- [x] Uso mínimo de la resolución 320px.
+	- [x] Uso máximo de la resolución 1680px.
 - [ ] La página nunca debe tener scroll horizontal.
-- [ ] Estar bien semanticamente y uso mínimo de div/span.
+- [x] Estar bien semanticamente y uso mínimo de div/span.
 - [ ] Usar imágenes en cada sección.
 - En el formulario de contacto debe tener mínimo:
-	- [ ] Nombre.
-	- [ ] Email.
-	- [ ] Teléfono.
-	- [ ] Comentario.
+	- [x] Nombre.
+	- [x] Email.
+	- [x] Teléfono.
+	- [x] Comentario.
 - [ ] Usar el nav y hacer links anclas.
 - El footer tiene que tener:
-	- [ ] Una foto de 250px de ancho.
-	- [ ] Nombre.
-	- [ ] Apellido.
-	- [ ] Edad.
-	- [ ] Correo electrónico.
+	- [x] Una foto de 250px de ancho.
+	- [x] Nombre.
+	- [x] Apellido.
+	- [x] Edad.
+	- [x] Correo electrónico.
 	- [ ] Redes sociales.
