@@ -241,11 +241,12 @@
     align-items: center;
     gap: 2rem;
     margin-top: 1.25rem;
+    padding: 0 2rem;
 }
 
 .footer__figure {
-    width: 250px;
-    height: 300px;
+    max-width: 250px;
+    max-height: 300px;
     border-radius: 2.5rem;
     overflow: hidden;
 }
