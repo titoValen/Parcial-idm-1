@@ -106,11 +106,19 @@
     margin-top: 3rem;
 }
 
+@media (max-width: 600px) {
+    .main-content__section--introduction .main-content__list {
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
 .main-content__section--introduction .main-content__list .main-content__list-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 250px;
+    min-width: 250px;
 }
 
 .main-content__section--introduction .main-content__list .main-content__list-item figure {
