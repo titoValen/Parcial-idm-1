@@ -301,7 +301,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 1.25rem;
+    margin: 1.25rem 0;
     padding: 0 2rem;
 }
 
@@ -321,4 +321,10 @@
 
 .footer__email:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
 }
