@@ -110,10 +110,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 250px;
 }
 
 .main-content__section--introduction .main-content__list .main-content__list-item figure {
     width: 4rem;
+}
+
+.main-content__section--introduction .main-content__list .main-content__list-item span {
+    text-align: center;
 }
 
 /* FEACTURES */
