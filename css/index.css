@@ -8,9 +8,10 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background: #fff8ff88;
-    position: sticky;
+    /* background: #fff8ff88; */
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 99999999999999999999999;
 }
 
@@ -100,7 +101,7 @@
 
 @media (max-width: 975px) {
     .header {
-        padding: 0 2rem;
+        padding: 0 1.2rem;
     }
     
     .header__nav {
@@ -116,11 +117,18 @@
 /* BANNER */
 
 .presentacion {
-    background-image: url('../img/banner_1.webp');
+    background-image: url('../img/Desktop-Tales-Of-Vesperia-1280x1024.jpg');
     background-size: cover;
     height: 100dvh;
     width: 100%;
-    mask-image: linear-gradient(transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(black 98%, transparent);
+}
+
+@media (max-width: 600px) {
+    .presentacion {
+        background-image: url('../img/Iphone-Tales-Of-Vesperia-1000x1505.webp');
+        background-position: center;
+    }
 }
 
 /* MAIN */
