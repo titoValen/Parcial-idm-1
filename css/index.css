@@ -16,13 +16,17 @@
 }
 
 .header__logo-link {
-    width: 115px;
+    width: clamp(5rem, 3.438rem + 4.167vw, 7.188rem);
     transition: .3s;
 }
 
 .header__logo-link:hover {
     scale: 1.05;
     filter: drop-shadow(0 0 .5rem var(--dorado-suave-color));
+}
+
+.header__logo-figure {
+    width: 100%;
 }
 
 .header__nav {
@@ -65,7 +69,7 @@
 
 .hamburger svg {
     /* The size of the SVG defines the overall size */
-    height: 4rem;
+    height: 3.7rem;
     /* Define the transition for transforming the SVG */
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -127,7 +131,6 @@
 @media (max-width: 600px) {
     .presentacion {
         background-image: url('../img/Iphone-Tales-Of-Vesperia-1000x1505.webp');
-        background-position: center;
     }
 }
 
