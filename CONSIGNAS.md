@@ -9,7 +9,7 @@
 - Usar como mínimo dos breakpoints
 	- [x] Uso mínimo de la resolución 320px.
 	- [x] Uso máximo de la resolución 1680px.
-- [ ] La página nunca debe tener scroll horizontal.
+- [x] La página nunca debe tener scroll horizontal.
 - [x] Estar bien semanticamente y uso mínimo de div/span.
 - [ ] Usar imágenes en cada sección.
 - En el formulario de contacto debe tener mínimo:
