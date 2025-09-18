@@ -21,7 +21,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 115px; /* Ajustado para considerar la altura del header */
 }
 
 body {

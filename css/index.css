@@ -7,12 +7,19 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
     background: #fff8ff88;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 99999999999999999999999;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .header__logo-link {
@@ -104,7 +111,7 @@
 }
 
 @media (max-width: 975px) {
-    .header {
+    .header__container {
         padding: 0 1.2rem;
     }
     
@@ -121,10 +128,11 @@
 /* BANNER */
 
 .presentacion {
-    background-image: url('../img/Desktop-Tales-Of-Vesperia-1280x1024.jpg');
+    background-image: url('../img/background/Desktop-Tales-Of-Vesperian-3840x2160.webp');
     background-size: cover;
     background-attachment: fixed;
-    height: calc(100dvh - 115px);
+    background-position: center;
+    height: 100vh;
     width: 100%;
     mask-image: linear-gradient(black 98%, transparent);
 }
@@ -138,7 +146,6 @@
 @media (max-width: 600px) {
     .presentacion {
         background-image: url('../img/background/Iphone-Tales-Of-Vesperian.webp');
-        background-position: center;
     }
 }
 
@@ -148,6 +155,7 @@
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
+    margin-top: 2rem;
 }
 
 .main-content__section {
