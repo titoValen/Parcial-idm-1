@@ -131,13 +131,13 @@
 
 @media (max-width: 900px) {
     .presentacion {
-        background-image: url('../img/Tablet-Tales-Of-Vesperia-600x903.webp');
+        background-image: url('../img/background/Tablet-Tales-Of-Vesperia-600x903.webp');
     }
 }
 
 @media (max-width: 600px) {
     .presentacion {
-        background-image: url('../img/Iphone-Tales-Of-Vesperian.webp');
+        background-image: url('../img/background/Iphone-Tales-Of-Vesperian.webp');
         background-position: center;
     }
 }
