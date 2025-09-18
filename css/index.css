@@ -8,8 +8,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    /* background: #fff8ff88; */
-    position: fixed;
+    background: #fff8ff88;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 99999999999999999999999;
