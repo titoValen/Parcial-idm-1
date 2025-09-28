@@ -114,7 +114,7 @@
     .header__container {
         padding: 0 1.2rem;
     }
-    
+
     .header__nav {
         display: none;
     }
@@ -278,6 +278,57 @@
     gap: 1rem;
 }
 
+.character-content .main-content__text {
+    padding: 0.5rem;
+    font-size: clamp(0.875rem, 0.7965rem + 0.4651vw, 1rem);
+    color: var(--plateado-claro-color);
+}
+
+.character-toggle {
+    display: none;
+}
+
+.character-toggle-container {
+    background: var(--azul-oscuro-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.character-content .main-content__text {
+    display: none;
+}
+
+.character-toggle:checked ~ .character-content .main-content__text {
+    display: block;
+}
+
+.character-btn {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: var(--plateado-claro-color);
+    border: 2px solid var(--plateado-oscuro-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-family: var(--texto-parrafo);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.character-btn:hover {
+    background-color: var(--dorado-suave-color);
+    border-color: var(--dorado-suave-color);
+    color: white;
+    box-shadow: 0 0 0.5rem var(--dorado-suave-color);
+}
+
+.character-toggle:not(:checked) ~ .character-btn::after {
+    content: "Mostrar descripción";
+}
+
+.character-toggle:checked ~ .character-btn::after {
+    content: "Ocultar descripción";
+}
+
 /* GALLERY */
 
 .gallery {
@@ -310,7 +361,7 @@
         flex-wrap: wrap;
         gap: 1rem;
     }
-    
+
     .gallery img {
         height: 200px;
         width: 45%;
@@ -318,8 +369,8 @@
         border-radius: 8px;
         transition: filter 0.5s, transform 0.3s;
     }
-    
-    .gallery img:hover, 
+
+    .gallery img:hover,
     .gallery img:active {
         filter: grayscale(0) brightness(1.15);
         transform: scale(1.05);
@@ -332,7 +383,7 @@
         flex-direction: column;
         height: auto;
     }
-    
+
     .gallery img {
         width: 100%;
         height: 250px;
