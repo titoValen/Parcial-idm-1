@@ -70,7 +70,7 @@
     display: none;
 }
 
-.hamburger input {
+.menu-toggle {
     display: none;
 }
 
@@ -93,7 +93,7 @@
         stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hamburger input:checked+svg .line {
+#menu-toggle:checked~.hamburger .line {
     stroke: var(--rojo-vino-color);
 }
 
@@ -101,11 +101,11 @@
     stroke-dasharray: 12 63;
 }
 
-.hamburger input:checked+svg {
+#menu-toggle:checked~.hamburger svg {
     transform: rotate(-45deg);
 }
 
-.hamburger input:checked+svg .line-top-bottom {
+#menu-toggle:checked~.hamburger .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
 }
@@ -117,6 +117,36 @@
 
     .header__nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff8ff88;
+        padding: 1rem 0;
+        z-index: 9999;
+    }
+
+    .header__nav-link {
+        width: 100%;
+        display: block;
+        border-radius: 0;
+        padding: 0.5rem 0;
+    }
+
+    #menu-toggle:checked~.header__nav {
+        display: block;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header__nav-item {
+        width: 100%;
+        text-align: center;
+        margin: 0;
     }
 
     .hamburger {
@@ -231,10 +261,12 @@
 .main-content__video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    padding-bottom: 56.25%;
+    /* Relación de aspecto 16:9 */
     height: 0;
     overflow: hidden;
-    max-width: 1000px; /* Opcional: limitar el ancho máximo */
+    max-width: 1000px;
+    /* Opcional: limitar el ancho máximo */
     margin: 0 auto;
 }
 
@@ -297,7 +329,7 @@
     display: none;
 }
 
-.character-toggle:checked ~ .character-content .main-content__text {
+.character-toggle:checked~.character-content .main-content__text {
     display: block;
 }
 
@@ -321,11 +353,11 @@
     box-shadow: 0 0 0.5rem var(--dorado-suave-color);
 }
 
-.character-toggle:not(:checked) ~ .character-btn::after {
+.character-toggle:not(:checked)~.character-btn::after {
     content: "Mostrar descripción";
 }
 
-.character-toggle:checked ~ .character-btn::after {
+.character-toggle:checked~.character-btn::after {
     content: "Ocultar descripción";
 }
 
